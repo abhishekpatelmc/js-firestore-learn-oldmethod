@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore</title>
+</head>
+
+<body>
+    name <input type="text" id="name" oninput="Update(this.value, 'name')"> <br><br>
+    usn <input type="text" id="usn" oninput="Update(this.value, 'usn')"><br><br>
+    department <input type="text" id="department" oninput="Update(this.value, 'depdepartment')"><br><br>
+    college <input type="text" id="college" oninput="Update(this.value, 'college')"><br><br>
+    <hr>
+    <button id="insertBtn">Insert</button>
+    <button id="selectBtn">Select</button>
+    <button id="updateBtn">Update</button>
+    <button id="deleteBtn">Delete</button>
+
+    <!-- Script -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+    <!-- script -->
+
+</body>
+
+</html>
